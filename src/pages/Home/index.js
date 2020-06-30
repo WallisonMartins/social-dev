@@ -1,32 +1,22 @@
 import React from 'react';
+import Header from './components/Header';
 import './style.css';
 
 function Home() {
     return (
         <div>
-            <header className="header">
-                <div className="toolbar">
-                    <div>
-                        <a href="/">Social Dev</a>
-                        <input type="text"/>
+            <Header />
+            <div>
+                <div className="toolbar"></div>
+                <main className="main">
+                    <div className="navbar">
+                        navbar
                     </div>
-                    <div>
-                        <button></button>
-                        <span>img1</span>
-                        <span>img2</span>
+                    <div className="feed">
+                        feed
                     </div>
-                </div>
-            </header>
-
-            <div className="toolbar"></div>
-            <main className="main">
-                <div className="navbar">
-                    navbar
-                </div>
-                <div className="feed">
-                    feed
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     )
 }
